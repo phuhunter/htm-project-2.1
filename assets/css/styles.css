@@ -1,3 +1,6 @@
+:root {
+    --primary-color: #1ebfc1;
+}
 * {
     box-sizing: border-box;
 }
@@ -6,8 +9,221 @@ html {
 }
 body {
     font-size: 1.6rem;
+    font-family: Poppins;
 }
 a {
     text-decoration: none;
 }
 /* -----------COMMON CSSS------------ */
+.content {
+    width: min(calc(100% - 48px), 1170px);
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+}
+/* ------------HEADER---------------- */
+.header {
+    padding-top: 64px;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu {
+    display: flex;
+    gap: 0 39px;
+}
+.header__menu-link {
+    color: #2f3a3b;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+.header__menu-link--active {
+    color: #2f3a3b;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 24px;
+}
+.header__action {
+    color: #494949;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+.header__action--outline {
+    color: #1ebfc1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 6px;
+    border: 1px solid #1ebfc1;
+    padding: 12px 24px;
+}
+/* HERO */
+.hero {
+    margin-top: 50px;
+}
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 79px;
+}
+.hero__content {
+    width: 39%;
+}
+.hero__media {
+    width: 49%;
+    position: relative;
+}
+.hero__label {
+    color: #767e7e;
+    font-size: 14px;
+    margin-top: 93px;
+}
+.hero__title {
+    color: #0d1111;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-top: 18px;
+}
+.hero__desc {
+    color: #9da6a5;
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 46px;
+    width: 374px;
+}
+.hero__actions {
+    margin-top: 52px;
+}
+.hero__button {
+    border-radius: 14px;
+    background: #1ebfc1;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
+    padding: 20px 40px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin-right: 50px;
+}
+.herro__play {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+.hero__image {
+    width: 100%;
+    height: 631px;
+    object-fit: cover;
+}
+.hero__stat {
+    position: absolute;
+}
+.hero__stat--course {
+    position: absolute;
+    top: 149px;
+    left: -40px;
+    border-radius: 18px;
+    background: #fefefd;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+    width: 157px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    gap: 0 16px;
+}
+.hero__stat-icon--course {
+    width: 36px;
+    height: 40px;
+    background-color: #ff8282;
+    border-radius: 8px;
+    /* display: inline-block; */
+    position: relative;
+}
+.hero__stat-icon--course::after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 11px;
+    left: 4px;
+    border-radius: 100px;
+}
+.hero__stat-value {
+    display: block;
+}
+.hero__stat-info {
+    color: #0d1111;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+.hero__stat--schedules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px 0;
+    width: 124px;
+    height: 132px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+    bottom: 46px;
+    left: -62px;
+    position: absolute;
+}
+.hero__stat--students {
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+    padding: 17px 0 17px 35px;
+}
+.hero__students {
+    margin-top: 8px;
+}
+.hero__student {
+    width: 33px;
+    height: 33px;
+    /* padding: 17px 35px; */
+}
+.hero__student-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.hero__student-list {
+    display: flex;
+}
+.hero__student + .hero__student {
+    margin-left: -8px;
+    display: inline-block;
+}
